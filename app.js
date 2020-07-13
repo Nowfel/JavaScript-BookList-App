@@ -56,5 +56,8 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
         UI.addBookToList(book);
 
         
+
+        // Clear fields
+        UI.clearFields();
     }
 });
