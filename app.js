@@ -64,6 +64,7 @@ class Store {
         } else {
             books = JSON.parse(localStorage.getItem('books'));
         }
+        console.log(books);
 
         return books;
     }
@@ -71,6 +72,7 @@ class Store {
     static addBook(book) {
         const books = Store.getBooks();
         books.push(book);
+        console.log(books);
         localStorage.setItem('books', JSON.stringify(books));
     }
 
